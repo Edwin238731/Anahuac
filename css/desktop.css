@@ -7,6 +7,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #333;
+    font-family: Arial, Helvetica, sans-serif ;
 }
 
 .ancho {
@@ -23,6 +24,8 @@ html {
     --Oscuro: #333;
     --blanco: white;
     --negro: black;
+    --roboto: Roboto-Regular,"Helvetica Neue";
+    --robotobold:Roboto-Bold,"Helvetica Neue";
 }
 .circulo{
     background-color:var(--naranja);
@@ -30,8 +33,10 @@ html {
     width: 50px;
     height: 50px;
     padding: 10px;
-    font-size: 10px;
-    line-height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 19px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -44,13 +49,15 @@ html {
 .rectangulo{
     background-color:var(--naranja);
     color: var(--blanco);
-    padding: 10px;
-    font-size: 20px;
-    height: 40px;
+    padding: 3px 15px 3px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 24px;
     display: flex;
     position: absolute;
     left: 0px;
-    top: -40px;
+    top: -30px;
 }
 h1{
     display: flex;
@@ -61,11 +68,29 @@ h1{
 .naranja{
     color: var(--naranja);
 }
+.href{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+}
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .uno{
-    padding: 100px 0px 100px 0px;
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
-
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 .cont1 figure{
     overflow: hidden;
     height: 50%;
@@ -84,7 +109,6 @@ h1{
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 10px #ccc;
-
 }
 .cont1_texto{
     background-color: var(--blanco);
@@ -98,14 +122,23 @@ h1{
 .cont1_texto .texto{
     width: 100%;
     height: 160px;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: bold;
 }
 .cont1_texto a {
-    text-align: right;
-    width: 70px;
-    font-size: 10px;
     display: inline-block;
+    text-align: end;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    line-height: 18px;
     text-decoration: none;
+}
+.cont2{
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 footer{
